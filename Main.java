@@ -107,6 +107,7 @@ public class Main {
 
                                     case 3:
                                         System.out.println("Enter the dates, between which you want to find the reminders.");
+                                        System.out.println("Make sure you enter the date in the format YYYY-MM-DD");
                                          String s = SC.nextLine();
                                          String n = SC.nextLine();
                                          String t = SC.nextLine();
