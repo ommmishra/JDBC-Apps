@@ -5,7 +5,7 @@ This program lets you store your reminders in a database through the use of JAVA
 in learning the basics of JAVA DATABASE CONNECTIVITY.Before you start with this program you must have a brief understanding of database
 and SQL(Structured Query Language).
 
-**The featured program works specifically with MySQL so make sure you are wll versed in the SQL clauses.**
+**The featured program works specifically with MySQL so make sure you are well versed in the SQL clauses.**
 
 First of all the things you require: JDK(Java Dvelopment Kit)(Obviously as you are running java programs), A suitable IDE or Vim is the best choice if you are used to it, MySQL installed in your computer, A suitable JDBC Driver, since we are using MySQL we will use ConnectorJ.
 
