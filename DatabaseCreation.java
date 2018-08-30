@@ -8,7 +8,7 @@ class DatabaseCreation {
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "ultrablast2018");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "user", "password");
                 System.out.println("Connected Database Successfully...\n\n");
                 st = conn.createStatement();
                 String sql = "CREATE DATABASE database-name;";
