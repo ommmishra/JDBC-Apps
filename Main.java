@@ -15,7 +15,7 @@ public class Main {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/reminder", "root", "ultrablast2018");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/notes", "root", "ultrablast2018");
             System.out.println("Connected Database Successfully...\n\n");
             st = conn.createStatement();
             System.out.println("Enter 1 to proceed.");
@@ -28,15 +28,13 @@ public class Main {
                 int b = SC.nextInt();
                 switch (b) {
                     case 1:
-                        System.out.println("Enter the reminder No, note followed by your reminder, its time and date.(Press enter after writing each attribute)");
-                        System.out.println("Enter the date in the format DD/MM/YY and the time in the format HH:MM");
+                        System.out.println("Enter the reminder No, note, reminder.(Press enter after writing each attribute)");
                         z = SC.nextLine();
                         k = SC.nextLine();
                         c = SC.nextLine();
                         x = SC.nextLine();
-                        o = SC.nextLine();
-                        p = SC.nextLine();
-                        String sql = "INSERT INTO reminderapp VALUES ( " + k + ", '" + c + "','" + x + "', '" + o + "','" + p + "' );";
+                        String sql = "INSERT INTO reminder VALUES ( " + k + ", '" + c + "','" + x + "', NOW());";
+                        System.out.println(sql);
                         st.executeUpdate(sql);
                         System.out.println("Reminder added");
                         break;
@@ -44,7 +42,7 @@ public class Main {
                         System.out.println("Enter the index no. of the reminder you want to delete");
                         z = SC.nextLine();
                         k = SC.nextLine();
-                        sql = "DELETE FROM reminderapp WHERE No = " + k + ";";
+                        sql = "DELETE FROM reminder WHERE No = " + k + ";";
                         st.executeUpdate(sql);
                         System.out.println("Reminder Deleted");
                         break;
@@ -55,9 +53,9 @@ public class Main {
                         l = SC.nextInt();
                         switch (l){
                             case 1:
-                                sql = "SELECT * FROM reminderapp";
+                                sql = "SELECT * FROM reminder";
                                 rs = st.executeQuery(sql);
-//                                display();
+
                                 while (rs.next()){
                                     System.out.print(rs.getInt(1));
                                     System.out.print(" ");
@@ -66,8 +64,6 @@ public class Main {
                                     System.out.print(rs.getString(3));
                                     System.out.print(" ");
                                     System.out.print(rs.getString(4));
-                                    System.out.print(" ");
-                                    System.out.print(rs.getString(5));
                                     System.out.println(" ");
                                 }
                                 break;
@@ -79,7 +75,7 @@ public class Main {
                                         System.out.println("Enter the No. of reminder");
                                         o = SC.nextLine();
                                         l = SC.nextInt();
-                                        sql = "SELECT * FROM reminderapp WHERE No = "+l+";";
+                                        sql = "SELECT * FROM reminder WHERE No = "+l+";";
                                         rs = st.executeQuery(sql);
                                         while (rs.next()){
                                             System.out.print(rs.getInt(1));
@@ -89,8 +85,6 @@ public class Main {
                                             System.out.print(rs.getString(3));
                                             System.out.print(" ");
                                             System.out.print(rs.getString(4));
-                                            System.out.print(" ");
-                                            System.out.print(rs.getString(5));
                                             System.out.println(" ");
                                         }
                                         break;
@@ -99,7 +93,7 @@ public class Main {
                                         System.out.println("Enter the note of the reminder");
                                         j = SC.nextLine();
                                          h = SC.nextLine();
-                                        sql = "SELECT * FROM reminderapp WHERE note = '"+h+"';";
+                                        sql = "SELECT * FROM reminder WHERE note = '"+h+"';";
                                         rs = st.executeQuery(sql);
                                         while (rs.next()){
                                             System.out.print(rs.getInt(1));
@@ -109,8 +103,6 @@ public class Main {
                                             System.out.print(rs.getString(3));
                                             System.out.print(" ");
                                             System.out.print(rs.getString(4));
-                                            System.out.print(" ");
-                                            System.out.print(rs.getString(5));
                                             System.out.println(" ");
                                         }
                                             break;
@@ -120,7 +112,7 @@ public class Main {
                                          String s = SC.nextLine();
                                          String n = SC.nextLine();
                                          String t = SC.nextLine();
-                                        sql = "SELECT * FROM reminderapp WHERE date BETWEEN '"+n+"' AND '"+t+"';";
+                                        sql = "SELECT * FROM reminder WHERE date BETWEEN '"+n+"' AND '"+t+"';";
                                         System.out.println(sql);
                                         rs = st.executeQuery(sql);
                                         while (rs.next()){
@@ -131,8 +123,6 @@ public class Main {
                                             System.out.print(rs.getString(3));
                                             System.out.print(" ");
                                             System.out.print(rs.getString(4));
-                                            System.out.print(" ");
-                                            System.out.print(rs.getString(5));
                                             System.out.println(" ");
                                         }
                                         break;
