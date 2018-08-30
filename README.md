@@ -7,11 +7,7 @@ and SQL(Structured Query Language).
 
 **The featured program works specifically with MySQL so make sure you are wll versed in the SQL clauses.**
 
-First of all the things you require:
-*JDK(Java Dvelopment Kit)(Obviously as you are running java programs).
-*A suitable IDE or Vim is the best choice if you are used to it.
-*MySQL installed in your computer.
-*A suitable JDBC Driver, since we are using MySQL we will use ConnectorJ.
+First of all the things you require: JDK(Java Dvelopment Kit)(Obviously as you are running java programs), A suitable IDE or Vim is the best choice if you are used to it, MySQL installed in your computer, A suitable JDBC Driver, since we are using MySQL we will use ConnectorJ.
 
 
 *************
