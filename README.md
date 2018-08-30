@@ -1,7 +1,7 @@
 # ReminderApp
 A small project for exploring the JAVA DATABASE CONNECTIVITY(JDBC).
 
-This program lets you store your reminders in a database through the use of JAVA, although its a very crude program it will be usefull
+This program lets you store your reminders in a database through the use of JAVA, although its a very crude program it will be useful
 in learning the basics of JAVA DATABASE CONNECTIVITY.Before you start with this program you must have a brief understanding of database
 and SQL(Structured Query Language).
 
