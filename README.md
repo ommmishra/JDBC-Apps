@@ -28,6 +28,6 @@ THE TABLE AND DATABASE HAVE TO BE CREATED SEPARATELY< EITHER BY USING JAVA OR DI
 WHILE DOWNLOADING ConnectorJ MAKE SURE YOU ARE DOWNLOADING THE COREECT AND UPTODATE VERSION OF IT(Links will be provided below).
 
 Links for ConnectorJ:
-(make sure you download the platform indepednt one while downloading for WINDOWS and macOS, all other versions are provided explicitly)
+(make sure you download the platform indepednt one while downloading for WINDOWS and macOS, all other versions for different OSs' are provided explicitly)
 https://dev.mysql.com/downloads/connector/j/
 
