@@ -15,19 +15,19 @@ First of all the things you require: JDK(Java Dvelopment Kit)(Obviously as you a
 In line 18:
              conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database-name", "username", "password");
             
-          Change database-name to the database ypu will be connecting to, change username and password to the username and password used
+          Change databasename to the database ypu will be connecting to, change username and password to the username and password used
           by you to access your local MySQL server.
       
  In line 36, 45, 56, 78, 96, 115:
                                  
-           Change table-name to the name of the table you will be using in the program present in the database.
+           Change tablename to the name of the table you will be using in the program present in the database.
 
 *************
 NOTE:
-THE TABLE AND DATABASE HAVE TO BE CREATED SEPARATELY EITHER BY USING JAVA(a database creatiion program file has been include for those who wannt to try) OR DIRECTLY THROUGH MyQL USING SUITABLE METHOD.
+THE TABLE AND DATABASE HAVE TO BE CREATED SEPARATELY EITHER BY USING JAVA(a database and table(Check also included) creation class has also been include for those who want to try or you can edit those out) OR DIRECTLY THROUGH MyQL USING SUITABLE METHOD.
 WHILE DOWNLOADING ConnectorJ MAKE SURE YOU ARE DOWNLOADING THE COREECT AND UPTODATE VERSION OF IT(Links will be provided below).
 
 Links for ConnectorJ:
-(make sure you download the platform indepednt one while downloading for WINDOWS and macOS, all other versions for different OSs' are provided explicitly)
+(make sure you download the platform indepedent one while downloading for WINDOWS and macOS, all other versions for different OSs' are provided explicitly)
 https://dev.mysql.com/downloads/connector/j/
 
